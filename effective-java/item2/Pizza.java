@@ -18,4 +18,8 @@ public abstract class Pizza {
         // 하위 클래스는 이 메서드를 재정의(overring)하여 "this"를 반환하도록 해야한다.
         protected abstract T self();
     }
+
+    Pizza(Builder<?> builder) {
+        toppings = builder.toppings.clone();
+    }
 }
