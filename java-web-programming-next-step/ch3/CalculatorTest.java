@@ -1,3 +1,6 @@
+package ch3;
+
+import ch3.Calculator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
