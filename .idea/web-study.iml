@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Ch3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/effective-java/item3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/effective-java/item5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java-web-programming-next-step" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
