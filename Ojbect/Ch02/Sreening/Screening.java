@@ -1,3 +1,5 @@
+package Sreening;
+
 import java.time.LocalDateTime;
 
 public class Screening {

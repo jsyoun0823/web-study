@@ -1,4 +1,8 @@
-public class PhoneNumber {
+import java.util.Comparator;
+
+import static java.util.Comparator.comparingInt;
+
+public class PhoneNumber implements Cloneable{
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(short areaCode, short prefix, short lineNum) {
@@ -32,5 +36,23 @@ public class PhoneNumber {
         result = 31 * result + Short.hashCode(prefix);
         result = 31 * result + Short.hashCode(lineNum);
         return result;
+    }
+
+    @Override
+    public PhoneNumber clone() {
+        try {
+            return (PhoneNumber) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
+
+    private static final Comparator<PhoneNumber> COMPARATOR =
+            comparingInt((PhoneNumber pn) -> pn.areaCode)
+                    .thenComparingInt(pn -> pn.prefix)
+                    .thenComparingInt(pn -> pn.lineNum);
+
+    public int compareTo(PhoneNumber pn) {
+        return COMPARATOR.compare(this, pn);
     }
 }

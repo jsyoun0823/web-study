@@ -1,3 +1,5 @@
+package Sreening;
+
 /* 금액 할인 정책 : 할인 조건을 만족할 경우 일정한 금액을 할인 */
 public class AmountDiscountPolicy extends DiscountPolicy{
     private Money discountAmount;

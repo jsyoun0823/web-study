@@ -1,3 +1,5 @@
+package Sreening;
+
 /* 할인 조건 중 순번 조건  */
 public class SequenceCondition implements DiscountCondition{
     private int sequence;

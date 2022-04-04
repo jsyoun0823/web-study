@@ -1,3 +1,11 @@
+package Movie;
+
+import Sreening.Money;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Reservation {
     private Customer customer;
     private Screening screening;
