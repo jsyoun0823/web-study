@@ -1,29 +1,48 @@
 package Sreening;
 
-import java.time.Duration;
+import lombok.Getter;
 
-public class Movie {
+import java.time.Duration;
+import java.util.List;
+
+public abstract class Movie {
     private String title;
     private Duration runningTime;
     private Money fee;
-    private DiscountPolicy discountPolicy;
+    private List<DiscountCondition> discountConditions;
 
-    public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
+    private MovieType movieType;
+    private Money discountAmount;
+    private double discountPercent;
+
+    public Movie(String title, Duration runningTime, Money fee, List<DiscountCondition> discountConditions) {
         this.title = title;
         this.runningTime = runningTime;
         this.fee = fee;
-        this.discountPolicy = discountPolicy;
+        this.discountConditions = discountConditions;
     }
 
-    public Money getFee() {
+    public Movie(String title, Duration runningTime, Money fee) {
+        this.title = title;
+        this.runningTime = runningTime;
+        this.fee = fee;
+    }
+
+    protected Money getFee() {
         return fee;
     }
 
     public Money calculateMovieFee(Screening screening) {
-        return fee.minus(discountPolicy.calculateDiscountAmount(screening));
+        if(isDiscountable(screening))
+            return fee.minus(calculateDiscountAmount());
+
+        return fee;
     }
 
-    public void changeDiscountPolicy(DiscountPolicy discountPolicy) {
-        this.discountPolicy = discountPolicy;
+    private boolean isDiscountable(Screening screening) {
+        return discountConditions.stream()
+                .anyMatch(condition -> condition.isSatisfiedBy(screening));
     }
+
+    abstract protected Money calculateDiscountAmount();
 }
