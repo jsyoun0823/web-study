@@ -9,12 +9,13 @@
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item3_4" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item5_6" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/effective-java/item7_8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java-web-programming-next-step" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/effective-java/item9_10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ojbect/Ch02" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/item11to14" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ojbect/Ch04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch04" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
