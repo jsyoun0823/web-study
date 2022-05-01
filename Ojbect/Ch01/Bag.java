@@ -11,8 +11,15 @@ public class Bag { // 관람객이 소지품을 보관할 Bag 클래스
         return ticket != null;
     }
 
-    public void setTicket(Ticket ticket) {
-        this.ticket = ticket;
+    public Long hold(Ticket ticket) {
+        if(hasInvitation()) {
+            this.ticket = ticket;
+            return 0L;
+        } else {
+            this.ticket = ticket;
+            minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
     }
 
     public void minusAmount(Long amount) {
