@@ -18,6 +18,8 @@
       <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch03" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch04" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/effective-java/Ch05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ojbect/Ch10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ojbect/Ch11" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
