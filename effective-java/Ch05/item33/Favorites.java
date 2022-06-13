@@ -9,7 +9,7 @@ public class Favorites {
     private Map<Class<?>, Object> favorites = new HashMap<>();
 
     public <T> void putFavorite(Class<T> type, T instance) {
-        favorites.put(Objects.requireNonNull(type), type.cast(instance));
+        favorites.put(Objects.requireNonNull(type), instance);
     }
 
     public <T> T getFavorite(Class<T> type) {
