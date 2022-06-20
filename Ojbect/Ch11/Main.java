@@ -1,4 +1,4 @@
-//public class Main {
+//public class Lecture.Main {
 //    public static void main(String[] args) {
 //
 //        // 일반 요금제에 세금 정책을 조합할 경우
