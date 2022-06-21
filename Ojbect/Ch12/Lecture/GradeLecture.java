@@ -26,7 +26,7 @@ public class GradeLecture extends Lecture {
         return String.format("%s:%d", grade.getName(), gradeCount(grade));
     }
 
-    private long gradeCount(Grade grade) {
+    public long gradeCount(Grade grade) {
         return getScores().stream()
                 .filter(grade::include)
                 .count();
