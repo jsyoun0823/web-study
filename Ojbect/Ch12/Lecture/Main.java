@@ -21,6 +21,7 @@ public class Main {
                                 Arrays.asList(81, 95, 75, 50, 45));
 
         System.out.println(gradeLecture.evaluate());
+//        (GradeLecture)gradeLecture.gradeCount();
         /*
 
            [0621 스터디 추가내용]

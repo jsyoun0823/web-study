@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Lecture {
+
     private int pass;
     private String title;
     private List<Integer> scores = new ArrayList<>();
