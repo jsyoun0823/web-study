@@ -25,15 +25,17 @@ String str5 = new String("Java");
 ![img_1.png](img_1.png)
 
 ###1. " "를 사용한 방식 (리터럴 방식)
-    - literal로 생성한 String 값은 Heap 영역 내 "String Constant Pool"에 저장된다.
-      - 위 코드에서, str1 객체의 "Java"라는 값은 String Pool에 저장된다.
-      - str2 객체의 값인 "Java"가 이미 String Pool에 존재하므로 같은 곳을 참조하게 된다.
-    - 따라서 str1 == str2 의 결과는 참이다. 
+
+- literal로 생성한 String 값은 Heap 영역 내 "String Constant Pool"에 저장된다.
+ - 위 코드에서, str1 객체의 "Java"라는 값은 String Pool에 저장된다.
+ - str2 객체의 값인 "Java"가 이미 String Pool에 존재하므로 같은 곳을 참조하게 된다.
+- 따라서 str1 == str2 의 결과는 참이다. 
 
 ###2. new 연산자를 사용한 방식
-   - new 연산자로 생성한 String 객체는 Heap 영역 내 각각에 존재한다. 
-     - 위 코드에서, str4는 String Pool에 "Java"라는 값이 있어도, Heap 영역 내 별도의 객체를 참조하게 된다.
-   - 따라서 str4 == str5의 결과는 거짓이다.
+
+- new 연산자로 생성한 String 객체는 Heap 영역 내 각각에 존재한다. 
+  - 위 코드에서, str4는 String Pool에 "Java"라는 값이 있어도, Heap 영역 내 별도의 객체를 참조하게 된다.
+- 따라서 str4 == str5의 결과는 거짓이다.
 
 
 ### intern 메서드 
