@@ -1,3 +1,5 @@
+package item02;
+
 import java.util.EnumSet;
 import java.util.Objects;
 import java.util.Set;
@@ -8,9 +10,14 @@ public abstract class Pizza {
 
     abstract static class Builder<T extends Builder<T>> {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
+
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));
+
             return self();
+            // this 가 아닌 self()를 반환해야 한다.
+            //  -> 하위클래스에 있는 Builder들은 자기 자신을 return해야 한다.
+            //  -> 하위타입인 T타입을 return할 수 있게끔 self()를 사용한 것.
         }
 
         abstract Pizza build();

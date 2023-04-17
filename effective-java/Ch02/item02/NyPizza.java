@@ -1,3 +1,5 @@
+package item02;
+
 import java.util.Objects;
 
 public class NyPizza extends Pizza{
