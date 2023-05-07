@@ -8,4 +8,8 @@ public enum Coffee {
     Coffee(int price) {
         this.price = price;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
