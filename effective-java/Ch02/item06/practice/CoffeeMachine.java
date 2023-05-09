@@ -23,4 +23,9 @@ public class CoffeeMachine {
 
         throw new IllegalArgumentException("없는 원두입니다.");
     }
+
+    @Deprecated
+    public void blend() {
+        System.out.println("Blend Coffee");
+    }
 }

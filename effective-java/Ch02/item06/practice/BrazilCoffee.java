@@ -10,4 +10,5 @@ public class BrazilCoffee implements Coffee{
     public void setPrice(int price) {
         this.price = price;
     }
+
 }

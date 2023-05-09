@@ -7,5 +7,7 @@ public class Main {
         Coffee coffee = coffeeMachine.makeCoffee(CoffeeBeans.브라질);
 
         System.out.println(coffee.getClass());
+
+        coffeeMachine.blend();
     }
 }
