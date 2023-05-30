@@ -36,10 +36,14 @@ public class RecipeReader implements AutoCloseable{
 
     @Override
     public void close() {
+        throw new IllegalArgumentException();
+        /*
         try {
+            System.out.println("close!");
             reader.close();
         } catch(IOException e) {
             throw new RuntimeException(e);
         }
+         */
     }
 }
