@@ -1,12 +1,24 @@
 package item17;
 
-public final class Complex {
+public class Complex {
     private final double re;
     private final double im;
 
-    public Complex(double re, double im) {
+    // 사실상 final
+    private Complex(double re, double im) {
         this.re = re;
         this.im = im;
+    }
+    // 정적 팩터리 (private 생성자와 함께 사용)
+    public static Complex valueOf(double re, double im) {
+        return new Complex(re, im);
+    }
+
+    // 내부에서의 확장이 가능하다. (상속)
+    private static class MyComplex extends Complex {
+        private MyComplex(double re, double im) {
+            super(re, im);
+        }
     }
 
     public double realPart() { return re; }
