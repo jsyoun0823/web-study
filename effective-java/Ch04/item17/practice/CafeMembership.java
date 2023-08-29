@@ -21,6 +21,7 @@ public class CafeMembership {
         return new CafeMembership(customer, points + pointsToAdd);
     }
 
+    // 내부적으로 확장 가능
     private static class CafeVIPMembership extends CafeMembership {
         private CafeVIPMembership(Customer customer, int points) {
             super(customer, points);

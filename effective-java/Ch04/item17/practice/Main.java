@@ -13,7 +13,7 @@ public class Main {
         CafeMembership updatedMembership1 = membership1.addPoints(30);
         CafeMembership updatedMembership2 = membership2.addPoints(60);
 
-        // 기존 멤버십은 바뀌지 않는다.
+        // 기존 멤버십은 바뀌지 않는다. -> 변경이력 관리도 용이
         membership1.showPoints();
         membership2.showPoints();
 
