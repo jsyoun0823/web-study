@@ -1,6 +1,7 @@
 package item30;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 
 public class RecursiveTest {
@@ -16,5 +17,10 @@ public class RecursiveTest {
         }
 
         return result;
+    }
+
+    public static void main(String[] args) {
+        List<String> argList = List.of("A", "B", "C");
+        System.out.println(max(argList));
     }
 }
